@@ -1,0 +1,8 @@
+<div>
+  <p>Child Count: The button has been clicked {{ count }} times...</p>
+  <p *ngIf="count >= 10">Child counter stops working after 10 clicks.</p>
+  <p>Parent Count: The button has been clicked {{ parentCount }} times...</p>
+  <button (click)="incrementCount()" mat-raised-button color="primary">
+    <fa-icon [icon]="pointerIcon"></fa-icon>Click Me!
+  </button>
+</div>

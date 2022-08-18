@@ -1,0 +1,11 @@
+<div>
+  <h1>Params</h1>
+  <h3>Url Params:</h3>
+  <p>urlParam: {{ urlParam }}</p>
+  <p>secondParam: {{ secondParam }}</p>
+  <h3>Query Params:</h3>
+  <div *ngFor="let param of params">
+    <p>Key: {{ param.name }}</p>
+    <p>Value: {{ param.value }}</p>
+  </div>
+</div>

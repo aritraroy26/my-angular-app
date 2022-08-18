@@ -1,0 +1,8 @@
+<div *ngIf="showList">
+  <div *ngFor="let person of people; index as i">
+    <h3>{{ i + 1 }} of {{ people.length }}</h3>
+    <p>Name: {{ person.name }}</p>
+    <p>Age: {{ person.age }}</p>
+    <p>Hair color: {{ person.hairColor }}</p>
+  </div>
+</div>
